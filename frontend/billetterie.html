@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./node_modules/owl.carousel/dist/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="./node_modules/owl.carousel/dist/assets/owl.theme.default.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./node_modules/mmenu-js/dist/mmenu.css" />
+    <link rel="stylesheet" href="./node_modules/fullcalendar/main.css">
+    <title>MHP - Billetterie</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row" id="header-row">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <img src="/images/logomuseesvgblanc.svg" class="logomuseeparis" alt="">
+                    <a href="#">Visiter</a>
+                    <a href="#">Histoire du musée</a>
+                    <a href="#">Expositions</a>
+                    <a href="/billetterie.html" target="_blank">Billetterie</a>
+                    <a href="/inscription.html">S'inscrire</a>
+                    <a href="/connexion.html">Connexion</a>
+                    <a href="/contact.html" target="_blank">Contact - Newsletter</a>
+                    <button type="button" class="btn btn-primary"><span class="reservation-btn">Réservez votre
+                            billet</span></button>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-4">
+                                <p>Ouvert du mardi au dimanche de 10h à 18h.</p>
+                            </div>
+                            <div class="col-4">
+                                <a href="" class="logoreseaux"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="" class="logoreseaux"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="" class="logoreseaux"><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#" style="color: #ffff;">FR</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" id="burger">
+                    <a href="#" id="button-menu" onclick="openNav()"><i class="fa-solid fa-bars" width="30"
+                            height="30"></i><span class="menu"> Menu</span></a>
+                </div>
+                <div class="col" id="logo">
+                    <a href="index.html"><img src="/images/logomuseesvg.svg" alt=""></a>
+                </div>
+                <div class="col" id="nav-agenda">
+                    <a href="#" id="button-agenda"><span class="agenda">Agenda </span><i
+                            class="fa-solid fa-calendar-days"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--titre billetterie-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-11" id="titrebilletterie">
+                <h1>Billetterie</h1>
+            </div>
+        </div>
+    </div>
+    <!--carousel affiche-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/images/premireaffiche(1).png" class="d-block w-100" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/deuxiemeaffiche.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/images/troisiemeaffiche.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+    <!--bouton reserver-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col">
+                <button type="button" class="btn btn-lg" id="btnreserverbillet" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">Réservez votre billet</button>
+            </div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+    </div>
+    <!--liseret or-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12" id="liseretor">
+                <img src="/images/liseretor.svg" style="width: 600px;" alt="">
+            </div>
+        </div>
+    </div>
+    <!--Choisir sa date-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <h3 id="choisirladate">Choisir la date</h3>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+    <!--Calendrier/dispo/img-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-6">
+                <img src="/images/calendrier.png" style="border: 3px solid #DAC798; margin-bottom: 20px;" alt="">
+            </div>
+            <div class="col-2">
+                <ul id="disponibilite">
+                    <li>
+                        <img src="/images/carrevert.png" style="width: 24px; height: 24px;" alt="">
+                        Disponible
+                    </li>
+                    <li>
+                        <img src="/images/carreorange.png" style="width: 24px; height: 24px;" alt="">
+                        Disponibilité limitée
+                    </li>
+                    <li>
+                        <img src="/images/carrerouge.png" style="width: 24px; height: 24px;" alt="">
+                        Non disponible
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2" id="imgstatue">
+                <img src="/images/imgimg.png" style="border: 5px solid #DAC798; height: 316px;" alt="">
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+    <!--Entrez une date-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="row g-3">
+                    <div class="col-sm-7" id="entrezdate">
+                      <input type="text" class="form-control" placeholder="Entrez une date ici" aria-label="City" id="entrezunedate">
+                    </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+    <!--Liste horaire-->
+    <div class="container-fluid">
+        <div class="row" style="margin-top: 20px; margin-bottom: 100px;">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <table class="table" style="background-color: #DAC798; border-radius: 5px;">
+                    <thead>
+                      <tr>
+                        <th scope="col">Disponibilité</th>
+                        <th scope="col">Horaires</th>
+                        <th scope="col">Prix</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><img src="/images/carrevert.png" style="width: 24px; height: 24px;" alt=""></th>
+                        <td>14:00</td>
+                        <td>A partir de 5.00€</td>
+                        <td style="width: 60px; height: 30px;"><button type="button" class="btn btn-sm" style="padding: 2px; background-color: #FF1616; color: white; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">Choisir</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><img src="/images/carrevert.png" style="width: 24px; height: 24px;" alt=""></th>
+                        <td>14:30</td>
+                        <td>A partir de 5.00€</td>
+                        <td style="width: 60px; height: 30px;"><button type="button" class="btn btn-sm" style="padding: 2px; background-color: #FF1616; color: white; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">Choisir</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><img src="/images/carrerouge.png" style="width: 24px; height: 24px;" alt=""></th>
+                        <td>15:00</td>
+                        <td>A partir de 5.00€</td>
+                        <td style="width: 60px; height: 30px;"><button type="button" class="btn btn-sm" style="padding: 2px; background-color: #FF1616; color: white; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">Choisir</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><img src="/images/carrevert.png" style="width: 24px; height: 24px;" alt=""></th>
+                        <td>15:30</td>
+                        <td>A partir de 5.00€</td>
+                        <td style="width: 60px; height: 30px;"><button type="button" class="btn btn-sm" style="padding: 2px; background-color: #FF1616; color: white; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">Choisir</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><img src="/images/carrevert.png" style="width: 24px; height: 24px;" alt=""></th>
+                        <td>16:00</td>
+                        <td>A partir de 5.00€</td>
+                        <td style="width: 60px; height: 30px;"><button type="button" class="btn btn-sm" style="padding: 2px; background-color: #FF1616; color: white; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">Choisir</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><img src="/images/carrevert.png" style="width: 24px; height: 24px;" alt=""></th>
+                        <td>16:30</td>
+                        <td>A partir de 5.00€</td>
+                        <td style="width: 60px; height: 30px;"><button type="button" class="btn btn-sm" style="padding: 2px; background-color: #FF1616; color: white; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">Choisir</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><img src="/images/carrevert.png" style="width: 24px; height: 24px;" alt=""></th>
+                        <td>17:00</td>
+                        <td>A partir de 5.00€</td>
+                        <td style="width: 60px; height: 30px;"><button type="button" class="btn btn-sm" style="padding: 2px; background-color: #FF1616; color: white; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">Choisir</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><img src="/images/carrerouge.png" style="width: 24px; height: 24px;" alt=""></th>
+                        <td>17:30</td>
+                        <td>A partir de 5.00€</td>
+                        <td style="width: 60px; height: 30px;"><button type="button" class="btn btn-sm" style="padding: 2px; background-color: #FF1616; color: white; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">Choisir</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><img src="/images/carrevert.png" style="width: 24px; height: 24px;" alt=""></th>
+                        <td>18:00</td>
+                        <td>A partir de 5.00€</td>
+                        <td style="width: 60px; height: 30px;"><button type="button" class="btn btn-sm" style="padding: 2px; background-color: #FF1616; color: white; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">Choisir</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row" style="border-top: 2px solid #DAC798;">
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="/images/Ministere_de_la_culture.svg" class="logoministere" alt="">
+                        </div>
+                        <div class="col-6" id="pfooter">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo optio numquam omnis
+                                commodi
+                                dolor rem, in tempora eius.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12" id="horairefooter">
+                            <h5>Horaires</h5>
+                            <p>Ouvert du mardi au dimanche de 10h à 18h.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12" id="reseauxsociaux">
+                            <h5>Suivez-nous sur les réseaux suivants</h5>
+                            <a href="" class="logoreseaux"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="" class="logoreseaux"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="" class="logoreseaux"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6" id="google">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.047515807521!2d2.3604019154252454!3d48.85730430873759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e00f9521b7d%3A0xc8c16b75253918c1!2sMus%C3%A9e%20Carnavalet!5e0!3m2!1sfr!2sfr!4v1668593365450!5m2!1sfr!2sfr"
+                        width="400" height="250" class="googlemap" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="mentions">
+                    <a href="#" id="mention">Contact</a>
+                    <a href="#" id="mention">Presse</a>
+                    <a href="#" id="mention">Accessibilité</a>
+                    <a href="#" id="mention">Un musée de la ville de Paris</a>
+                    <a href="#" id="mention">Mentions Légales</a>
+                    <a href="#" id="mention">Gérer les cookies</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="mentions">
+                    <a href="" id="mention">@ Copyright 2021 / Paris Musées / Musée Carnavalet - Histoire de
+                        Paris</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="mentions">
+                    <img src="/images/logo-vdp.svg" alt="">
+                    <img src="/images/logo-musee-de-france.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/node_modules/mmenu-js/dist/mmenu.js"></script>
+    <script src="./node_modules/fullcalendar/main.js"></script>
+    <script src="/main.js"></script>
+    <script>
+        document.getElementById("mySidenav").style.width = "0%";
+    </script>
+</body>
+
+</html>

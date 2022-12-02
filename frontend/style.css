@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+.container-fluid {
+    max-width: 100%;
+    padding: 0 !important;
+}
+#header {
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 1000;
+    border-bottom: 2px solid #DAC798;
+}
+#header-row {
+    margin-top: 20px;
+}
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #ff1616; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 125px; /* Place content 60px from the top */
+    transition: 1s; /* 0.5 second transition effect to slide in the sidenav */
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.sidenav .logomuseeparis {
+    padding-left: 760px;
+}
+.sidenav .btn {
+    background-color: transparent !important;
+    border: 1px solid #DAC798 !important;
+    position: absolute;
+    top: 740px;
+    left: 100px;
+}
+.sidenav .btn:hover {
+    background-color: #DAC798 !important;
+}
+.sidenav a {
+    /*padding: 8px 8px 8px 32px;*/
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: auto;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    color: #ffffff;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 40px;
+    margin-left: 50px;
+}
+.sidenav .row {
+    background-color: #4E4E4E; 
+    height: 100px;
+    position: relative;
+    top: 250px;
+}
+.sidenav .row .col-4 {
+    display: flex;
+    justify-content: center;
+}
+.sidenav .row .col-4 p {
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #ffffff;
+}
+.sidenav .row .col-4 .logoreseaux {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin-right: 20px;
+}
+.sidenav .row .col-4 .logoreseaux:hover {
+    color: #DAC798;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    .sidenav p {display: none;}
+  }
+#burger {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 12px;
+}
+#button-menu {
+    text-decoration: none;
+    color : black;
+}
+#button-menu:hover, .menu:hover {
+    color: #FF1616;
+}
+#logo {
+    display: inline-flex;
+    justify-content: center;
+}
+#nav-agenda {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 12px;
+    text-align: end;
+}
+#button-agenda {
+    text-decoration: none;
+    color : black;
+}
+#button-agenda:hover, .agenda:hover {
+    color: #FF1616;
+}
+@media screen and (max-width: 815px) {
+    .agenda {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+}
+#video {
+    max-width: 100%;
+    height: 1024px;
+    padding: 0 !important;
+    position: relative;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: white;
+}
+#btnreserver {
+    background-color: transparent;
+    border: 1px solid #ff1616 !important;
+    position: absolute;
+    top: 65%;
+    left: 27%;
+}
+#btnreserver:hover {
+    background-color: #FF1616 !important;
+}
+.reservation-btn {
+    color: white;
+}
+@media screen and (max-width: 815px) {
+    .content {
+        top: 30%;
+        left: 25%;
+    }
+    .btn {
+        top: 55%;
+        left: 25%;
+    }
+}
+#bienvenue {
+    text-align: center;
+}
+#textbienvenue {
+    text-align: justify;
+}
+#imgstatue {
+    display: inline-flex;
+    justify-content: center;
+    transition: transform .5s ease-in-out;
+}
+#imgstatue:hover {
+    transform: rotate(5deg);
+}
+#textstatue {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.imgbg {
+    max-width: 100%;
+    padding: 0 !important;
+    position: relative;
+    margin-top: 70px;
+    border-top: 2px solid #DAC798;
+    border-bottom: 2px solid #DAC798;
+    overflow:hidden;
+    width:100%;
+    height:auto;
+    filter:grayscale(100%);
+}
+.imgbg:hover {
+    filter:grayscale(0%);
+    -webkit-transform:scale(1);
+    transform:scale(1);
+    -webkit-transition:0.5s ease-in-out;
+    transition:0.5s ease-in-out;
+}
+.contenttext {
+    position: absolute;
+    top: 2420px;
+    right: 16px;
+    color: white;
+}
+h2 {
+    margin-bottom: 0px !important;
+    border-bottom: 2px solid #DAC798;
+}
+.btnensavoirplus {
+    background-color: transparent;
+    border: 1px solid #ff1616 !important;
+    position: absolute;
+    top: 2470px;
+    right: 2%;
+}
+.btnensavoirplus:hover {
+    background-color: #FF1616 !important;
+}
+.ensavoirplus-btn {
+    color: white;
+}
+.owl-carousel {
+    margin-top: 50px;
+    border-bottom: 2px solid #DAC798;
+}
+#actuexpo {
+    padding-top: 50px;
+    border-bottom: 2px solid #DAC798;
+    margin-right: 1073px;
+    margin-left: 12px;
+}
+.logoministere {
+    margin-top: 10px;
+    margin-left: 12px;
+}
+#pfooter {
+    margin-top: 10px;
+}
+h5 {
+    margin-bottom: 0px !important;
+}
+#horairefooter {
+    margin-top: 30px;
+    margin-left: 12px;
+}
+#reseauxsociaux {
+    margin-top: 5px;
+    margin-left: 12px;
+}
+.logoreseaux {
+    color: black;
+    font-size: 30px;
+    margin-right: 20px;
+}
+.logoreseaux:hover {
+    color: #FF1616;
+}
+#google {
+    display: inline-flex;
+    justify-content: center;
+}
+.googlemap {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #DAC798;
+}
+#mentions {
+    background-color: #4E4E4E;
+    height: 40px;
+    text-align: center;
+}
+#mention {
+    text-decoration: none !important;
+    color : rgb(255, 255, 255) !important;
+    margin: 10px;
+}
+.row .col-11 {
+    margin-top: 120px;
+}
+#btnreserverbillet {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    border: 1px solid #ff1616 !important;
+    box-shadow: #000000 !important;
+}
+#btnreserverbillet:hover {
+    color: white;
+    background-color: #FF1616 !important;
+}
+#liseretor {
+    display: inline-flex;
+    justify-content: center;
+}
+#disponibilite{
+    margin-top: 50%;
+    padding-left: 0px;
+}
+.col-2 ul {
+    list-style-type: none;
+}
+#choisirladate {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#entrezdate {
+    width: 561px; 
+    padding-right: 0px;
+    margin-bottom: 20px;
+}
+#entrezunedate {
+    color: white;
+    background-color: #ff1616;
+    border-color: #ff1616 !important;
+    box-shadow: none !important;
+}
+#entrezunedate::placeholder {
+    color: white;
+}
+#imgbgc {
+    text-align: center;
+}
+.imgbgcontact {
+    border: 3px solid #DAC798;
+    margin-top: 20px;
+    filter: blur(2px);
+    transition: ease-in-out .8s;
+}
+.imgbgcontact:hover {
+    transition: ease-in-out .8s;
+    filter: blur(0px);
+}
+#inputbox {
+    border: #DAC798 !important;
+    box-shadow: none !important;
+}
+#sendbutton {
+    border: 1px solid #ff1616 !important;
+    margin-top: 30px;
+}
+#sendbutton:hover {
+    background-color: #FF1616 !important;
+    color: white;
+}

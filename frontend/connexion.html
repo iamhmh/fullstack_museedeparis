@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./node_modules/owl.carousel/dist/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="./node_modules/owl.carousel/dist/assets/owl.theme.default.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/node_modules/mmenu-js/dist/mmenu.css">
+    <title>MHP - Connexion</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row" id="header-row">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <img src="/images/logomuseesvgblanc.svg" class="logomuseeparis" alt="">
+                    <a href="#">Visiter</a>
+                    <a href="#">Histoire du musée</a>
+                    <a href="#">Expositions</a>
+                    <a href="/billetterie.html" target="_blank">Billetterie</a>
+                    <a href="/inscription.html">S'inscrire</a>
+                    <a href="/connexion.html">Connexion</a>
+                    <a href="/contact.html" target="_blank">Contact - Newsletter</a>
+                    <button type="button" class="btn btn-primary"><span class="reservation-btn">Réservez votre
+                            billet</span></button>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-4">
+                                <p>Ouvert du mardi au dimanche de 10h à 18h.</p>
+                            </div>
+                            <div class="col-4">
+                                <a href="" class="logoreseaux"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="" class="logoreseaux"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="" class="logoreseaux"><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#" style="color: #ffff;">FR</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" id="burger">
+                    <a href="#" id="button-menu" onclick="openNav()"><i class="fa-solid fa-bars" width="30"
+                            height="30"></i><span class="menu"> Menu</span></a>
+                </div>
+                <div class="col" id="logo">
+                    <a href="index.html"><img src="/images/logomuseesvg.svg" alt=""></a>
+                </div>
+                <div class="col" id="nav-agenda">
+                    <a href="#" id="button-agenda"><span class="agenda">Agenda </span><i
+                            class="fa-solid fa-calendar-days"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--titre contact/connexion-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-11">
+                <h1>Connexion</h1>
+            </div>
+        </div>
+    </div>
+    <!--img 1000x500-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8" id="imgbgc">
+                <img src="/images/imgbgcontact.png" class="imgbgcontact" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    <!--text-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6" style="text-align: center; margin-top: 50px;">
+                <h4>Connexion</h4>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+    <!--form connexion-->
+    <div class="container-fluid">
+        <div class="row" style="margin-bottom: 50px;">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <section class="mb-4">
+                    <p class="text-center w-responsive mx-auto mb-5">Pour vous connecter à votre compte, vous pouvez vous connecter ici.</p>
+                    <div class="row">
+                        <div class="col-md-9 mb-md-0 mb-5" style="margin-top: 80px;">
+                            <form id="contact-form" name="contact-form" action="" method="">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="md-form mb-0">
+                                            <label for="email" class="">Email</label>
+                                            <input type="email" id="email" name="email" class="form-control" id="inputbox">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="md-form mb-0">
+                                            <label for="message">Mot de passe</label>
+                                            <input type="password" id="password" name="message" class="form-control" id="inputbox">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="text-center text-md-left">
+                                <a class="btn" id="sendbutton">Connexion</a>
+                            </div>
+                            <div class="status"></div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <ul class="list-unstyled mb-0">
+                                <li><i class="fas fa-map-marker-alt fa-2x" style="color:#FF1616;"></i>
+                                    <a href="https://www.google.fr/maps/place/23+Rue+de+S%C3%A9vign%C3%A9,+75003+Paris/@48.8570704,2.3606692,17z/data=!3m1!4b1!4m5!3m4!1s0x47e66e005706b0ef:0xa210915a334d4f19!8m2!3d48.8570669!4d2.3628579?hl=fr" target="_blank" style="text-decoration: none; color: black;"><p>23 Rue de Sévigné, 75003 Paris</p></a>
+                                </li>
+                                <li><i class="fas fa-phone mt-4 fa-2x" style="color:#FF1616;"></i>
+                                    <p>01 44 59 58 58</p>
+                                </li>
+                                <li><i class="fas fa-envelope mt-4 fa-2x" style="color:#FF1616;"></i>
+                                    <a href="" style="text-decoration: none; color: black;"><p>contact@museedeparis.com</p></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    <!--carousel-->
+    <h3 id="actuexpo">Actualités et Expositions à venir</h3>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 g-0">
+                <div class="owl-carousel owl-theme">
+                    <div> <img src="/images/carousel1.png" class="imgcarousel" width="218" height="411">Parisiennes
+                        Citoyennes!<br> 29-11-22</div>
+                    <div> <img src="/images/carousel2.png" class="imgcarousel" width="218" height="411">L'histoire du
+                        musée<br> 30-11-22</div>
+                    <div> <img src="/images/carousel3.png" class="imgcarousel" width="218" height="411">Sur les ailes de
+                        Mercure<br> 01-12-22</div>
+                    <div> <img src="/images/carousel4.png" class="imgcarousel" width="218" height="411">Paris et ses
+                        incontournables<br> 02-12-22</div>
+                    <div> <img src="/images/carousel5.png" class="imgcarousel" width="218" height="411">Les secrets du
+                        Carnavalet<br> 03-12-22</div>
+                    <div> <img src="/images/carousel6.png" class="imgcarousel" width="218" height="411">Visite
+                        thématique<br> 04-12-22</div>
+                    <div> <img src="/images/carousel7.png" class="imgcarousel" width="218" height="411">Notre Dame<br>
+                        06-12-22</div>
+                    <div> <img src="/images/carousel8.png" class="imgcarousel" width="218" height="411">Le vieux
+                        Paris<br> 07-12-22</div>
+                    <div> <img src="/images/carousel9.png" class="imgcarousel" width="218" height="411">Style des
+                        façades<br> 08-12-22</div>
+                    <div> <img src="/images/carousel10.png" class="imgcarousel" width="218" height="411">Oeuvres
+                        d'Arts<br> 09-12-22</div>
+                    <div> <img src="/images/carousel11.png" class="imgcarousel" width="218" height="411">Les saints de
+                        Paris<br> 10-02-22</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row" style="border-top: 2px solid #DAC798;">
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="/images/Ministere_de_la_culture.svg" class="logoministere" alt="">
+                        </div>
+                        <div class="col-6" id="pfooter">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo optio numquam omnis commodi
+                                dolor rem, in tempora eius.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12" id="horairefooter">
+                            <h5>Horaires</h5>
+                            <p>Ouvert du mardi au dimanche de 10h à 18h.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12" id="reseauxsociaux">
+                            <h5>Suivez-nous sur les réseaux suivants</h5>
+                            <a href="" class="logoreseaux"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="" class="logoreseaux"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="" class="logoreseaux"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6" id="google">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.047515807521!2d2.3604019154252454!3d48.85730430873759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e00f9521b7d%3A0xc8c16b75253918c1!2sMus%C3%A9e%20Carnavalet!5e0!3m2!1sfr!2sfr!4v1668593365450!5m2!1sfr!2sfr"
+                        width="400" height="250" class="googlemap" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="mentions">
+                    <a href="#" id="mention">Contact</a>
+                    <a href="#" id="mention">Presse</a>
+                    <a href="#" id="mention">Accessibilité</a>
+                    <a href="#" id="mention">Un musée de la ville de Paris</a>
+                    <a href="#" id="mention">Mentions Légales</a>
+                    <a href="#" id="mention">Gérer les cookies</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="mentions">
+                    <a href="" id="mention">@ Copyright 2021 / Paris Musées / Musée Carnavalet - Histoire de Paris</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="mentions">
+                    <img src="/images/logo-vdp.svg" alt="">
+                    <img src="/images/logo-musee-de-france.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/node_modules/mmenu-js/dist/mmenu.js"></script>
+    <script src="/main.js"></script>
+    <script>
+        document.getElementById("mySidenav").style.width = "0%";
+    </script>
+</body>
+
+</html>
