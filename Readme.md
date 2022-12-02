@@ -4,7 +4,7 @@ Il s'agit d'un exercice effectué en classe, création d'un site web, d'une part
 ### Language utilisé :
 ----------------------
 #### Frontend
-HTML / CSS
-Javascript / jQuery
+HTML / CSS et librairie Bootstrap
+Javascript pure + jQuery et librairie Owl Carousel / Aos Master / Typed Script
 #### Backend
 node.js avec express mongoose bcrypt
